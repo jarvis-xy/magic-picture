@@ -1,9 +1,9 @@
 ---
-name: gc-minimal-zine-poster-v0-1
+name: magic-picture-skill
 description: Generate poetic minimal paper-poster prompts and matching images from a theme, sentence, object, mood, article idea, or photo. Produces quiet Japanese/Korean zine-like editorial posters with large negative space, aged paper, experimental typography, restrained color accents, and a generated raster image.
 ---
 
-# Minimal Zine Poster v0.1
+# Magic Picture Skill
 
 Turn the user's content into both:
 
@@ -180,7 +180,7 @@ Always avoid:
 ````markdown
 **生成图**
 
-![Minimal Zine Poster](absolute-image-path-or-rendered-image)
+![Magic Picture poster](absolute-image-path-or-rendered-image)
 
 **最终 Prompt**
 

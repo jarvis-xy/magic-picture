@@ -1,8 +1,8 @@
-# 魔幻画 · Minimal Zine Poster
+# 魔幻画 · magic-picture-skill
 
 把一张照片、一句话、一个物件或一段内容灵感，变成带有纸本质感的极简 zine 海报。
 
-`gc-minimal-zine-poster-v0-1` 是一个面向 Codex 的图像生成 skill：它会先把自然语言编译为结构化 Prompt，再调用图像生成能力，返回海报成图、最终 Prompt 与本次的视觉配方。
+`magic-picture-skill` 是一个面向 Codex 的图像生成 skill：它会先把自然语言编译为结构化 Prompt，再调用图像生成能力，返回海报成图、最终 Prompt 与本次的视觉配方。
 
 ## 它适合做什么
 
@@ -45,7 +45,7 @@
 ```bash
 git clone https://github.com/jarvis-xy/magic-picture.git
 mkdir -p ~/.codex/skills
-cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
+cp -R magic-picture/skills/magic-picture-skill ~/.codex/skills/
 ```
 
 安装后，重新打开 Codex 或新建一个任务，让它扫描新的 skill。
@@ -53,7 +53,7 @@ cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
 安装成功后的目录应为：
 
 ```text
-~/.codex/skills/gc-minimal-zine-poster-v0-1/SKILL.md
+~/.codex/skills/magic-picture-skill/SKILL.md
 ```
 
 ### 2. 用主题生成海报
@@ -61,7 +61,7 @@ cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
 在 Codex 对话中输入：
 
 ```text
-使用 $gc-minimal-zine-poster-v0-1 做一张关于雨天旧书店的竖版海报。
+使用 $magic-picture-skill 做一张关于雨天旧书店的竖版海报。
 ```
 
 ### 3. 用照片生成海报
@@ -69,14 +69,14 @@ cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
 先在对话中附上一张照片，然后输入：
 
 ```text
-使用 $gc-minimal-zine-poster-v0-1 将这张照片做成安静的 zine 风格海报。
+使用 $magic-picture-skill 将这张照片做成安静的 zine 风格海报。
 保留海边与建筑作为主体，使用钴蓝色作为唯一的高饱和色。
 ```
 
 ### 4. 生成前后对照海报
 
 ```text
-使用 $gc-minimal-zine-poster-v0-1 将这张照片做成 3:5 竖版对照海报。
+使用 $magic-picture-skill 将这张照片做成 3:5 竖版对照海报。
 上方保留原图，下方把同一画面重构成旧纸、撕边、网点和复印质感。
 下方只保留一个高饱和色锚点，并加入简短的档案式标题。
 ```
@@ -84,7 +84,7 @@ cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
 ### 5. 只要 Prompt，不生成图片
 
 ```text
-使用 $gc-minimal-zine-poster-v0-1 为“午夜渡口”写最终生图 Prompt。
+使用 $magic-picture-skill 为“午夜渡口”写最终生图 Prompt。
 只输出 Prompt，不要生成图片。
 ```
 
@@ -106,7 +106,7 @@ cp -R magic-picture/skills/gc-minimal-zine-poster-v0-1 ~/.codex/skills/
 ## 常用输入模板
 
 ```text
-使用 $gc-minimal-zine-poster-v0-1
+使用 $magic-picture-skill
 主题：________
 画面主体：________
 情绪：________
@@ -135,10 +135,10 @@ magic-picture/
 │   ├── pattaya-last-light.png
 │   └── singapore-marina-bay-sands.png
 └── skills/
-    └── gc-minimal-zine-poster-v0-1/
+    └── magic-picture-skill/
         └── SKILL.md
 ```
 
 ## Skill 文件
 
-完整的视觉约束、Prompt 编译器、颜色规则、变化引擎、反向约束与质量检查见：[SKILL.md](skills/gc-minimal-zine-poster-v0-1/SKILL.md)。
+完整的视觉约束、Prompt 编译器、颜色规则、变化引擎、反向约束与质量检查见：[SKILL.md](skills/magic-picture-skill/SKILL.md)。
